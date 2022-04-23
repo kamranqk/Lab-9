@@ -23,7 +23,7 @@ window.onload = function(){
 	var userName = localStorage.getItem("nameIn"); // get value from local storage and assign it to userName
 	var userColor = localStorage.getItem("inColor"); // get value from local storage and assign it to userColor
 	if (userName !== null){ // check for null condition
-       userOut.innerHTML = "Welcome " + userName + "!";  // if not null concatenate the user name to welcome
+       userOut.innerHTML = "Welcome, " + userName;  // if not null concatenate the user name to welcome
 	} 
 	if (userColor !== null){
        bg.style.background = userColor; // change the background according to user choice
@@ -35,7 +35,7 @@ function processForm() {
 
 localStorage.setItem("nameIn", userNameOut.value); 	 // set value from local storage for user name
 localStorage.setItem("inColor", userColorOut.value); // set value from local storage for user color
-userOut.innerHTML = "Welcome " + userNameOut.value + "!";//  concatenate the user name to welcome
+userOut.innerHTML = "Welcome, " + userNameOut.value;//  concatenate the user name to welcome
 bg.style.background = userColorOut.value; // change the background according to user choice
 return false; // stop form to submit
 }
