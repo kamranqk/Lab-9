@@ -18,7 +18,7 @@ window.onload = function(){
 //CREATE OUTPUT WITH VALUES
 
 	if (userName !== null){ // check for null condition
-       userOut.innerHTML = "Welcome " + userName + "!";  // if not null concatenate the user name to welcome
+       userOut.innerHTML = "Welcome, " + userName;  // if not null concatenate the user name to welcome
 	} 
 	if (userColor !== null){
        bg.style.background = userColor; // change the background according to user choice
